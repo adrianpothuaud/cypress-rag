@@ -1,7 +1,18 @@
 {
   "name": "cypress-rag",
   "version": "1.0.0",
+  "description": "AI-powered element selection for Cypress using natural language descriptions",
   "type": "module",
+  "keywords": [
+    "cypress",
+    "testing",
+    "ai",
+    "llm",
+    "ollama",
+    "automation",
+    "e2e",
+    "plugin"
+  ],
   "scripts": {
     "clean": "",
     "open": "cypress open",
