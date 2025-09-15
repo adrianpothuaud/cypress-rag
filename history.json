@@ -1,0 +1,32 @@
+[
+  {
+    "timestamp": 1757918924537,
+    "pageUrl": "http://localhost:63740/app/index.html",
+    "elementDescription": "Username field",
+    "pageDOM": "<body> <div class=\"container\"> <form id=\"login-form\"> <h2>Connexion</h2> <div id=\"error-msg\" class=\"error\" data-testid=\"login-error\" style=\"display:none\"></div> <label for=\"username\">Nom d'utilisateur</label> <input data-testid=\"login-username\" type=\"text\" id=\"username\" name=\"username\" required=\"\" autocomplete=\"username\"> <label for=\"password\">Mot de passe</label> <input data-testid=\"login-password\" type=\"password\" id=\"password\" name=\"password\" required=\"\" autocomplete=\"current-password\"> <button data-testid=\"login-submit\" type=\"submit\">Se connecter</button> </form> <div id=\"profile\" class=\"profile\" data-testid=\"user-profile\" style=\"display:none\"> <h3>Profil utilisateur</h3> <p><strong>Nom d'utilisateur :</strong> <span id=\"profile-username\"></span></p> <p><strong>Email :</strong> <span id=\"profile-email\"></span></p> <p><strong>ID :</strong> <span id=\"profile-id\"></span></p> </div> </div> </body>",
+    "aiResponse": {
+      "selector": "input[data-testid='login-username']"
+    },
+    "elementFound": true
+  },
+  {
+    "timestamp": 1757918925835,
+    "pageUrl": "http://localhost:63740/app/index.html",
+    "elementDescription": "Password field",
+    "pageDOM": "<body> <div class=\"container\"> <form id=\"login-form\"> <h2>Connexion</h2> <div id=\"error-msg\" class=\"error\" data-testid=\"login-error\" style=\"display:none\"></div> <label for=\"username\">Nom d'utilisateur</label> <input data-testid=\"login-username\" type=\"text\" id=\"username\" name=\"username\" required=\"\" autocomplete=\"username\"> <label for=\"password\">Mot de passe</label> <input data-testid=\"login-password\" type=\"password\" id=\"password\" name=\"password\" required=\"\" autocomplete=\"current-password\"> <button data-testid=\"login-submit\" type=\"submit\">Se connecter</button> </form> <div id=\"profile\" class=\"profile\" data-testid=\"user-profile\" style=\"display:none\"> <h3>Profil utilisateur</h3> <p><strong>Nom d'utilisateur :</strong> <span id=\"profile-username\"></span></p> <p><strong>Email :</strong> <span id=\"profile-email\"></span></p> <p><strong>ID :</strong> <span id=\"profile-id\"></span></p> </div> </div> </body>",
+    "aiResponse": {
+      "selector": "input[data-testid='login-password']"
+    },
+    "elementFound": true
+  },
+  {
+    "timestamp": 1757918927104,
+    "pageUrl": "http://localhost:63740/app/index.html",
+    "elementDescription": "Login button",
+    "pageDOM": "<body> <div class=\"container\"> <form id=\"login-form\"> <h2>Connexion</h2> <div id=\"error-msg\" class=\"error\" data-testid=\"login-error\" style=\"display:none\"></div> <label for=\"username\">Nom d'utilisateur</label> <input data-testid=\"login-username\" type=\"text\" id=\"username\" name=\"username\" required=\"\" autocomplete=\"username\"> <label for=\"password\">Mot de passe</label> <input data-testid=\"login-password\" type=\"password\" id=\"password\" name=\"password\" required=\"\" autocomplete=\"current-password\"> <button data-testid=\"login-submit\" type=\"submit\">Se connecter</button> </form> <div id=\"profile\" class=\"profile\" data-testid=\"user-profile\" style=\"display:none\"> <h3>Profil utilisateur</h3> <p><strong>Nom d'utilisateur :</strong> <span id=\"profile-username\"></span></p> <p><strong>Email :</strong> <span id=\"profile-email\"></span></p> <p><strong>ID :</strong> <span id=\"profile-id\"></span></p> </div> </div> </body>",
+    "aiResponse": {
+      "selector": "button[data-testid='login-submit']"
+    },
+    "elementFound": true
+  }
+]

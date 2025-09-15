@@ -1,0 +1,16 @@
+{
+  "name": "cypress-rag",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "clean": "",
+    "open": "cypress open",
+    "run": "cypress run"
+  },
+  "dependencies": {
+    "cypress": "^15.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
+}

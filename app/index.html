@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        .container {
+            max-width: 350px;
+            margin: 60px auto;
+            background: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #0001;
+        }
+
+        .error {
+            color: #c00;
+            margin-bottom: 1em;
+        }
+
+        .profile {
+            background: #e6ffe6;
+            padding: 1em;
+            border-radius: 6px;
+        }
+
+        label {
+            display: block;
+            margin-top: 1em;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 0.5em;
+            margin-top: 0.2em;
+        }
+
+        button {
+            margin-top: 1.5em;
+            width: 100%;
+            padding: 0.7em;
+            background: #1976d2;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #125ea2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form id="login-form">
+            <h2>Connexion</h2>
+            <div id="error-msg" class="error" data-testid="login-error" style="display:none"></div>
+            <label for="username">Nom d'utilisateur</label>
+            <input data-testid="login-username" type="text" id="username" name="username" required
+                autocomplete="username">
+            <label for="password">Mot de passe</label>
+            <input data-testid="login-password" type="password" id="password" name="password" required
+                autocomplete="current-password">
+            <button data-testid="login-submit" type="submit">Se connecter</button>
+        </form>
+        <div id="profile" class="profile" data-testid="user-profile" style="display:none">
+            <h3>Profil utilisateur</h3>
+            <p><strong>Nom d'utilisateur :</strong> <span id="profile-username"></span></p>
+            <p><strong>Email :</strong> <span id="profile-email"></span></p>
+            <p><strong>ID :</strong> <span id="profile-id"></span></p>
+        </div>
+    </div>
+    <script>
+        const form = document.getElementById('login-form');
+        const errorMsg = document.getElementById('error-msg');
+        const profile = document.getElementById('profile');
+        const profileUsername = document.getElementById('profile-username');
+        const profileEmail = document.getElementById('profile-email');
+        const profileId = document.getElementById('profile-id');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const username = form.username.value.trim();
+            const password = form.password.value.trim();
+            if (username === password) {
+                // Simuler un profil utilisateur
+                errorMsg.style.display = 'none';
+                form.style.display = 'none';
+                profileUsername.textContent = username;
+                profileEmail.textContent = username + '@exemple.com';
+                profileId.textContent = Math.floor(Math.random() * 1000000);
+                profile.style.display = 'block';
+            } else {
+                errorMsg.textContent = 'Mauvais identifiants';
+                errorMsg.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+
+</html>
